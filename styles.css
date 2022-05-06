@@ -177,13 +177,24 @@ nav.scroll svg:nth-child(1) path {
  
 }
 
-nav.scroll svg:nth-child(2) path {
+nav.scroll button path {
   stroke: white;
 }
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 
 /*====MENU-EXPANDED===============================*/
 body.menu-expanded {
   overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) {
+  display: none;
 }
 
 .menu,
@@ -258,7 +269,7 @@ margin-bottom: 8rem;
 }
 
 body.menu-expanded .logo,
-body.menu-expanded button {
+body.menu-expanded nav button {
   position: relative;
   z-index: 100;
 }
