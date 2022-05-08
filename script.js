@@ -15,3 +15,7 @@ function closeMenu() {
 }
   
 
+//ScrollReveal({
+  //origin: 'top',
+  //distance: '30px',
+//}).reveal('#home');
